@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header" "nav nav" "education projects" "skills experience" "footer footer";
+    gap: 10px;
+}
+header{
+    grid-area: header;
+    background-color: lavender;
+}
+nav{
+    grid-area: nav;
+    background-color: royalblue;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+li{
+    color: white;
+    font-size: 20px;
+}
+.education{
+    grid-area: education;
+    background-color: lavender;
+    color: slateblue;
+    text-align: center;
+}
+.projects{
+    grid-area: projects;
+    background-color: slateblue;
+    color: whitesmoke;
+    text-align: center;
+}
+.skills{
+    grid-area: skills;
+    background-color: slateblue;
+    color: whitesmoke;
+    text-align: center;
+}
+.experience{
+    grid-area: experience;
+    background-color: lavender;
+    color: slateblue;
+    text-align: center;
+}
+main{
+    grid-area: main;
+    background-color: thistle;
+}
+footer{
+    grid-area: footer;
+    background-color: royalblue;
+}
